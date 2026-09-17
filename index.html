@@ -36,6 +36,33 @@
 
   header {
     margin-bottom: 56px;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border);
+    flex-shrink: 0;
+  }
+
+  .header-text {
+    min-width: 0;
+  }
+
+  @media (max-width: 520px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .links {
+      justify-content: center;
+    }
   }
 
   .eyebrow {
@@ -186,19 +213,22 @@
 <body>
   <div class="wrap">
     <header>
-      <p class="eyebrow">// portafolio</p>
-      <h1>Sebastian Jiménez Arango</h1>
-      <p class="lede">
-        Desarrollador full-stack. Construyo plataformas internas con IA aplicada,
-        automatización de procesos administrativos/contables y herramientas de análisis
-        geoespacial — la mayoría bajo NDA de cliente, así que aquí describo el problema,
-        el enfoque y el stack sin exponer código ni datos.
-      </p>
-      <div class="links">
-        <a href="https://github.com/jinebres10-lgtm" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/sebastian-jim%C3%A9nez-arango/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:jinebres@hotmail.com">Correo</a>
-        <a href="https://wa.me/573103240543" target="_blank" rel="noopener">WhatsApp</a>
+      <img class="avatar" src="foto-perfil.jpg" alt="Foto de Sebastian Jiménez Arango">
+      <div class="header-text">
+        <p class="eyebrow">// portafolio</p>
+        <h1>Sebastian Jiménez Arango</h1>
+        <p class="lede">
+          Desarrollador full-stack. Construyo plataformas internas con IA aplicada,
+          automatización de procesos administrativos/contables y herramientas de análisis
+          geoespacial — la mayoría bajo NDA de cliente, así que aquí describo el problema,
+          el enfoque y el stack sin exponer código ni datos.
+        </p>
+        <div class="links">
+          <a href="https://github.com/jinebres10-lgtm/portafolio" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/sebastian-jim%C3%A9nez-arango/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:jinebres@hotmail.com">Correo</a>
+          <a href="https://wa.me/573103240543" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
       </div>
     </header>
 
