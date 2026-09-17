@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sebastian Jiménez Arango — Portafolio</title>
+<meta name="description" content="Desarrollador full-stack — plataformas con IA, automatización y análisis geoespacial">
+<style>
+  :root {
+    --bg: #0d1117;
+    --bg-elev: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --text-dim: #8b949e;
+    --accent: #58a6ff;
+    --accent-dim: #1f6feb;
+    --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .wrap {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 64px 20px 80px;
+  }
+
+  header {
+    margin-bottom: 56px;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--accent);
+    margin: 0 0 12px;
+    letter-spacing: 0.02em;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin: 0 0 12px;
+    font-weight: 650;
+  }
+
+  .lede {
+    color: var(--text-dim);
+    font-size: 16px;
+    max-width: 60ch;
+    margin: 0 0 24px;
+  }
+
+  .links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .links a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    transition: border-color 0.15s, color 0.15s;
+  }
+
+  .links a:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  section {
+    margin-bottom: 48px;
+  }
+
+  h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-dim);
+    font-family: var(--mono);
+    margin: 0 0 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .card {
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 22px;
+    margin-bottom: 16px;
+  }
+
+  .card h3 {
+    margin: 0 0 6px;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .card .role {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--accent);
+    margin: 0 0 12px;
+  }
+
+  .card p {
+    margin: 0 0 12px;
+    color: var(--text-dim);
+    font-size: 14.5px;
+  }
+
+  .card p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+  }
+
+  .tag {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    background: rgba(88, 166, 255, 0.1);
+    color: var(--accent);
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+
+  .stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+  }
+
+  .stack-item {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--text-dim);
+    padding: 8px 10px;
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+  }
+
+  footer {
+    color: var(--text-dim);
+    font-size: 13px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #ffffff;
+      --bg-elev: #f6f8fa;
+      --border: #d0d7de;
+      --text: #1f2328;
+      --text-dim: #57606a;
+      --accent: #0969da;
+      --accent-dim: #0550ae;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="eyebrow">// portafolio</p>
+      <h1>Sebastian Jiménez Arango</h1>
+      <p class="lede">
+        Desarrollador full-stack. Construyo plataformas internas con IA aplicada,
+        automatización de procesos administrativos/contables y herramientas de análisis
+        geoespacial — la mayoría bajo NDA de cliente, así que aquí describo el problema,
+        el enfoque y el stack sin exponer código ni datos.
+      </p>
+      <div class="links">
+        <a href="https://github.com/jinebres10-lgtm" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/sebastian-jim%C3%A9nez-arango/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:jinebres@hotmail.com">Correo</a>
+        <a href="https://wa.me/573103240543" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Proyectos destacados</h2>
+
+      <div class="card">
+        <h3>Aplicaciones a la medida</h3>
+        <p class="role">Plataforma interna integral · Node.js + React · IA generativa</p>
+        <p>
+          Suite de aplicaciones a la medida construida de cero (backend, frontend y despliegue)
+          para digitalizar la operación completa de una consultora: gestión interna, un asistente
+          de IA que resume reuniones y extrae tareas accionables a partir de transcripciones, y
+          un conjunto de módulos ambientales para captura, cálculo y reportería de datos de
+          sostenibilidad de clientes externos.
+        </p>
+        <p>
+          <strong>Gestión interna:</strong> RR.HH. (solicitudes, empleados), inventario con CRUD
+          completo, gestión de proveedores, gestión de proyectos, procesos administrativos,
+          cultura organizacional y reconocimiento entre equipos.
+        </p>
+        <p>
+          <strong>Innovación y monitoreo:</strong> módulo de innovación para captura y seguimiento
+          de iniciativas internas, monitoreos ambientales periódicos y un módulo de estrés
+          climático para evaluar exposición y riesgo físico ante variables climáticas.
+        </p>
+        <p>
+          <strong>Datos ambientales multi-empresa:</strong> captura y análisis de residuos, energía,
+          agua, emisiones, producción y cumplimiento normativo por empresa, con dashboard, gráficas
+          interactivas (tendencias, comparativas, distribución) y exportes de reportes; modelo de
+          roles (superadmin / admin / usuario) con acceso segmentado por organización para clientes
+          externos e internos.
+        </p>
+        <p>
+          <strong>Huella de carbono:</strong> motor de cálculo propio alineado a GHG Protocol e
+          ISO 14064-1, catálogo de más de 350 factores de emisión editable e importable/exportable
+          vía Excel, manejo de incertidumbre estadística y métodos especiales (mezclas de
+          biocombustible, refrigerantes, biomasa).
+        </p>
+        <p>
+          <strong>Diagnóstico ESG:</strong> cuestionario tipo wizard con scoring ponderado por
+          dimensión, identificación de brechas, plan de trabajo sugerido y generación de reporte
+          en PDF, con acceso público sin necesidad de cuenta.
+        </p>
+        <div class="tags">
+          <span class="tag">Node.js</span>
+          <span class="tag">React</span>
+          <span class="tag">SQLite / lowdb</span>
+          <span class="tag">Anthropic API</span>
+          <span class="tag">GHG Protocol</span>
+          <span class="tag">Modelo de roles multi-empresa</span>
+          <span class="tag">Railway</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Agente de elaboración automática de documentos (PGIRS)</h3>
+        <p class="role">Automatización · IA generativa</p>
+        <p>
+          Agente que redacta automáticamente Planes de Gestión Integral de Residuos Sólidos
+          (PGIRS) a partir de la información base del proyecto, aplicando la estructura y
+          los criterios técnicos exigidos, y dejando un primer borrador listo para revisión
+          del equipo técnico.
+        </p>
+        <div class="tags">
+          <span class="tag">IA generativa</span>
+          <span class="tag">Generación automática de documentos</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Agente de certificados de experiencia</h3>
+        <p class="role">Automatización de documentos</p>
+        <p>
+          Agente que genera certificados de experiencia laboral de forma automática a partir
+          de la información de empleados y proyectos, estandarizando formato y contenido y
+          eliminando el trabajo manual repetitivo de redacción.
+        </p>
+        <div class="tags">
+          <span class="tag">Automatización</span>
+          <span class="tag">Generación automática de documentos</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Notificación de elaboración de facturas</h3>
+        <p class="role">Automatización de procesos administrativos</p>
+        <p>
+          Agente que monitorea el estado de elaboración de facturas y notifica automáticamente
+          a las personas responsables, reduciendo el seguimiento manual y los retrasos en el
+          proceso de facturación.
+        </p>
+        <div class="tags">
+          <span class="tag">Automatización</span>
+          <span class="tag">Notificaciones</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Selección de personal (revisión de hojas de vida)</h3>
+        <p class="role">Automatización · IA generativa</p>
+        <p>
+          Agente que analiza hojas de vida frente a los requisitos de una vacante y entrega
+          una preselección priorizada, agilizando el filtro inicial del proceso de
+          reclutamiento del equipo de RR.HH.
+        </p>
+        <div class="tags">
+          <span class="tag">IA generativa</span>
+          <span class="tag">Automatización de RR.HH.</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Agente de causación contable (DIAN)</h3>
+        <p class="role">Automatización · Python · Microsoft Graph</p>
+        <p>
+          Agente que automatiza la clasificación contable y causación de facturas
+          electrónicas recibidas, integrando reglas de negocio por proveedor, cálculo
+          de retenciones, y sincronización con archivos Excel vivos en SharePoint sin
+          bloquear su edición manual.
+        </p>
+        <p>
+          Corre de forma programada (GitHub Actions), con más de 80 pruebas unitarias
+          y manejo cuidadoso de condiciones de carrera al escribir sobre archivos
+          compartidos en uso simultáneo.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Microsoft Graph API</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">SharePoint</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Clasificación de coberturas terrestres con Deep Learning</h3>
+        <p class="role">Evaluación técnica · visión por computador · SIG</p>
+        <p>
+          Diseño de arquitectura para una herramienta de deep learning que asiste la
+          fotointerpretación de coberturas de la tierra (metodología CORINE Land Cover,
+          adaptación IDEAM) a partir de imágenes satelitales, integrada como capa editable
+          dentro de un flujo de trabajo en ArcGIS.
+        </p>
+        <p>
+          Incluyó análisis de viabilidad técnica, estrategia de despliegue por fases
+          para mitigar el riesgo de un dataset de entrenamiento modesto, y documentación
+          formal de la evaluación.
+        </p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Sistemas de información geográfica</span>
+          <span class="tag">Sentinel-2</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Stack</h2>
+      <div class="stack-grid">
+        <span class="stack-item">Node.js / Express</span>
+        <span class="stack-item">React</span>
+        <span class="stack-item">Python</span>
+        <span class="stack-item">SQLite / lowdb</span>
+        <span class="stack-item">PostgreSQL (Supabase)</span>
+        <span class="stack-item">Anthropic API</span>
+        <span class="stack-item">Microsoft Graph API</span>
+        <span class="stack-item">GitHub Actions</span>
+        <span class="stack-item">Railway</span>
+        <span class="stack-item">PyTorch</span>
+      </div>
+    </section>
+
+    <footer>
+      Escríbeme a <a href="mailto:jinebres@hotmail.com">jinebres@hotmail.com</a> ·
+      <a href="tel:+573103240543">310 324 0543</a> (llamadas o WhatsApp) ·
+      <a href="https://www.linkedin.com/in/sebastian-jim%C3%A9nez-arango/" target="_blank" rel="noopener">LinkedIn</a>
+    </footer>
+  </div>
+</body>
+</html>
